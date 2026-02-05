@@ -1,0 +1,8 @@
+{
+  "id": "plugin.com.pot-app.pot2obsidian",
+  "plugin_type": "collection",
+  "icon": "icon.svg",
+  "display": "Pot2Obsidian",
+  "homepage": "https://github.com/user/pot-app-collection-plugin-obsidian",
+  "needs": []
+}
