@@ -2,40 +2,46 @@
 
 Pot-App 生词本插件，将翻译结果以 flashcard 格式追加到 Obsidian 的 Markdown 文件中。
 
+## 功能
+
+- 自动从 Obsidian 插件读取配置的生词本路径
+- 翻译结果以 flashcard 格式保存，兼容 Obsidian Spaced Repetition 插件
+- 支持 Windows / macOS / Linux
+
 ## 输出格式
 
 ```markdown
-生词
+单词
 ?
-翻译
+翻译释义
 ```
 
-每条记录之间空两行，兼容 Obsidian 的 Spaced Repetition 插件。
+每条记录之间空两行。
 
 ## 安装
 
-1. 下载 Release 中的 `.potext` 文件
-2. 在 Pot-App 设置中导入插件
-
-或手动打包：
-1. 将 `main.js`、`info.json`、`icon.svg` 打包为 zip
-2. 重命名为 `plugin.com.pot-app.pot2obsidian.potext`
-3. 在 Pot-App 中安装
+1. 下载 [Release](https://github.com/MaolinSun32/pot-app-collection-plugin-obsidian/releases) 中的 `.potext` 文件
+2. 在 Pot-App 设置 → 服务设置 → 生词本 → 添加外部插件
+3. 导入下载的 `.potext` 文件
 
 ## 配置
 
-在 Pot-App 插件设置中配置：
+**无需在 Pot-App 中配置路径！**
 
-- **Markdown 文件完整路径**: 目标文件的绝对路径
-  - Windows 示例: `D:\Obsidian Vaults\MyVault\flashcards.md`
-  - macOS 示例: `/Users/username/Obsidian/MyVault/flashcards.md`
-  - Linux 示例: `/home/username/Obsidian/MyVault/flashcards.md`
+本插件会自动从 Obsidian 的 Pot2Obsidian 插件读取配置文件 (`~/.pot2obsidian/config.json`)。
+
+请先安装并配置 [Obsidian Pot2Obsidian 插件](https://github.com/MaolinSun32/obsidian-pot2obsidian-plugin)。
 
 ## 使用
 
-1. 在 Pot-App 中翻译单词
-2. 点击收藏按钮
-3. 单词和翻译将自动追加到配置的 Markdown 文件
+1. 在 Obsidian 中安装 Pot2Obsidian 插件，配置生词本路径
+2. 在 Pot-App 中安装本插件
+3. 翻译单词后点击收藏按钮
+4. 单词和翻译将自动追加到 Obsidian 的生词本文件
+
+## 相关项目
+
+- [Obsidian Pot2Obsidian 插件](https://github.com/MaolinSun32/obsidian-pot2obsidian-plugin) - Obsidian 端配置插件
 
 ## 许可证
 
