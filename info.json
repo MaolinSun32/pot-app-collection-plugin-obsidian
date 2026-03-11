@@ -3,6 +3,8 @@
   "plugin_type": "collection",
   "icon": "icon.svg",
   "display": "Pot2Obsidian",
+  "description": "将翻译结果以 Flashcard 格式保存到 Obsidian 生词本，自动读取 Obsidian Pot2Obsidian 插件的配置",
+  "author": "Sun Maolin",
   "homepage": "https://github.com/MaolinSun32/pot-app-collection-plugin-obsidian",
   "needs": []
 }
